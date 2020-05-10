@@ -373,11 +373,34 @@
                     <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="PipesBody">
                         <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Pipes:"/>
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
+                           Text=" A pipe is a connection between two processes, such that the standard output from one process becomes the standard input of the other process."/>
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
-                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
+                           Text="Pipe is one-way communication only i.e we can use a pipe such that One process write to the pipe, and the other process reads from the pipe. It opens a pipe, which is an area of main memory that is treated as a 'virtual file'."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Code Example:"/>
+                        <Image Source="pipe_ex_1"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Output:"/>
+                        <Image Source="pipe_ex_2"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+                        
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="30, 0, 0, 0"
+                           Text="In this example, we are writing three separate messages to the pipe, and then we are reading the same exact number of characters out of it."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Important Notes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="30, 0, 0, 0"
+                           Text="- It is important to keep track of the number of characters written into your pipe, because if you read too far you will read in random memory, and if you read too little you won't get your whole message out which can interfere when you write back into it again."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="30, 0, 0, 0"
+                           Text="- The pipe can be used by the creating process, as well as all its child processes, for reading and writing. One process can write to this 'virtual file' or pipe and another related process can read from it."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="30, 0, 0, 0"
+                           Text="- If a process tries to read before something is written to the pipe, the process is suspended until something is written."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="30, 0, 0, 0"
+                           Text="- The pipe system call finds the first two available positions in the process's open file table and allocates them for the read and write ends of the pipe."/>
+
                     </StackLayout>
                     
                 </StackLayout>

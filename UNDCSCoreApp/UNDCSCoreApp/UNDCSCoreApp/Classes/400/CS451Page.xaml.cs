@@ -51,5 +51,10 @@ namespace UNDCSCoreApp.Classes._400
         {
             MutexBody.IsVisible = !MutexBody.IsVisible;
         }
+
+        private void PipesButton_Clicked(object sender, EventArgs e)
+        {
+            PipesBody.IsVisible = !PipesBody.IsVisible;
+        }
     }
 }

@@ -82,6 +82,18 @@
     <ImageAsset Include="Assets.xcassets\fork_ex_2.imageset\fork_ex_2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pipe_ex_1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pipe_ex_2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pipe_ex_1.imageset\pipe_ex_1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pipe_ex_2.imageset\pipe_ex_2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\sem_ex_1.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
