@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="#00AF07"
+             x:Class="UNDCSCoreApp.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menu"
+                     Clicked="ToolbarItemNew_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="20">
+
+        <Label TextColor="White" FontSize="48" HorizontalTextAlignment="Center" Text="UND CS Core"/>
+        <Label TextColor="White" FontSize="20" HorizontalTextAlignment="Center" Text="The one-stop shop for resources on UND's computer science courses."/>
+
+        <Image Source="und_logo"
+                           HeightRequest="{OnPlatform iOS=300, Android=250}"
+                           WidthRequest="{OnPlatform iOS=300, Android=250}"
+                           HorizontalOptions="Center"/>
+
+        <Button Text="Credits"
+                x:Name="CreditsButton"
+                BackgroundColor="#FFFFFF"
+                Clicked="CreditsButton_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage>

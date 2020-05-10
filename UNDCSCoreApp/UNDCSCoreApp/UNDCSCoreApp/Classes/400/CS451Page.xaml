@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UNDCSCoreApp.Classes._400.CS451Page" BackgroundColor="#2D2D2D">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10, 30, 10, 10">
+                <Label Text="CS 451 - Operating Systems I" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Center"/>
+                <Label Text="C++" TextColor="White" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Resources:" TextColor="White" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" Margin="0, 30, 0, 0"/>
+                
+
+                <Button Text="Linux Terminal"
+                        Margin="10"
+                        x:Name="LinuxTerminalButton"
+                        Clicked="LinuxTerminalButton_Clicked"
+                        BackgroundColor="#FFFFFF"/>
+
+                <StackLayout x:Name="LinuxBody" IsVisible="False" Margin="0, 10, 0, 30">
+                    <Label TextColor="White" 
+                           FontAttributes="Bold" 
+                           FontSize="18"
+                           HorizontalTextAlignment="Center"
+                           Text="Useful Commands:"/>
+
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="pwd:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Print Working Directory"/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ls:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Lists all files in the current working directory."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="cd:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Changes current directory to speicified path."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="history:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Displays a list of all recently used commands."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="clear:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Clears the terminal screen."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="cat:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Displays the contents of specified file or files."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="cp:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Creates a copy of the specified file in the working directory."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="mv:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Moves file from one directory to a target directory."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="rename:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Change the name of a file or files."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="grep:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Searcges the specified files for the string specified."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="rm:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Remove specified file or files."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="wget:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Downloads the file or page at the given web URL."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="zip/gzip/tar:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Methods of file compression."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ps:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Display all running processes."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="kill:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Kills a single process."/>
+
+                    <Label TextColor="White" 
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           HorizontalTextAlignment="Center"
+                           Margin="0, 30, 10, 0"
+                           Text="Useful Shortcuts:"/>
+
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ctrl + U:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Cancels line you're typing."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ctrl + C:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Interrupts currently executing program."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ctrl + Z:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Suspends program."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ctrl + S:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Stops output sent to terminal."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 10, 0, 0" Text="ctrl + Q:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Restarts program if stopped."/>
+                </StackLayout>
+
+                <Button Text="Term Definitions"
+                        Margin="10"
+                        x:Name="TermDefinitonsButton"
+                        Clicked="TermDefinitonsButton_Clicked"
+                        BackgroundColor="#FFFFFF"/>
+
+                <StackLayout x:Name="TermDefinitionBody" IsVisible="False" Margin="0, 10, 0, 30">
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 0, 0, 0" Text="Direct Memory Access (DMA):"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="When a device controller transfers an entire block of data from its own buffer storage to memory without CPU intervention"/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Interrupt-driven IO:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="An I/O scheme that employs interrupts to indicate to the processor that an I/O device needs attention."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Programmed IO:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="The Processor issues an I/O command, on behalf of a process, to an I/O module; that process then busy waits for the operation to be completed before proceeding."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Fork:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Starts a new process which is a copy of the one that calls it."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Exec:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Replaces the current process image with another (different) one."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Critical Section:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A piece of code that only one thread can execute at a time."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Remainder Section:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Code of a critical section that does not include entry section or exit section."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Mutual Exclusion:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="The concept that if a process is executing in its critical section, then no other processes can be executing in their critical sections."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Progress:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Processes operating outside their critical sections CANNOT prevent other processes from entering their critical sections."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Bounded Waiting:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Limiting the number of times other processes can enter context switches before a process who requested goes in."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Race condition (or lost update):"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="This occurs when two processes that access the same resource have their operations interleaved in a way that makes the state/value of the shared resource incorrect."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Mutex:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A condition that specifies that only one process may update (modify) a shared resource at a time to ensure correct operation and results."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Thread:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A thread is basically a function. Threads can work independently from one another and share resources during a process"/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Producer:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Produces goods one at a time, and passes the item to the consumer."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Consumer:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Receives goods, one at a time, from a producer."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Semaphores:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="An integer variable that is accessed through 2 atomic operations:"/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Zombie Process:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A process which has finished the execution but still has an entry in the process table to report to its parent process, however, its parent has terminated."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Defunct Process:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A process that has terminated unexpectedly. all zombies are defunct BUT all defunct processes are not necessary zombies it's a dead child. A defunct process process still has a parent that it is waiting to have wait() called on it."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Adopted Process:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A child process that is ongoing, however, its parent process is terminated and it is then 'adopted' by the init process (PID 0) and thus sends its exit code back to there."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Concurrent Processes:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Processes which exist at the same time (includes processes in the ready queue and the CPU)."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Simultaneous Processes:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Processes which are executing at the same time (requires multiple processes)."/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Timer: "/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Can be set to interrupt the computer after a speciﬁed period. The period may be ﬁxed (for example, 1/60 second) or variable"/>
+                    <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Privileged/Kernel:"/>
+                    <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Operations given to the OS. I/O instructions are included."/>
+                </StackLayout>
+
+                <Button Text="Programming Concepts"
+                        Margin="10"
+                        x:Name="ProgrammingConceptsButton"
+                        Clicked="ProgrammingConceptsButton_Clicked"
+                        BackgroundColor="#FFFFFF"/>
+
+                <StackLayout IsVisible="False" Margin="0, 10, 0, 30" x:Name="ProgrammingConceptsBody">
+                    <Button Text="Threads"
+                            Margin="40, 0, 10, 0"
+                            x:Name="ThreadsButton"
+                            Clicked="ThreadsButton_Clicked"
+                            HeightRequest="40"
+                            BackgroundColor="#FFFFFF"/>
+
+                    <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="ThreadsBody">
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Thread:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A thread is basically a function. Threads can work independently from one another and share resources during a process."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Thread Attributes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Has the same states as a process (new, ready, running, waiting, terminating)."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Has its own program counter, register set, and stack space."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Can create child threads."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Cannot be shared among different tasks."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Can share with peer threads, the tasks PCB information."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Allows more efficient CPU switching than context switching."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="-Is not always supported by the system (OS, library)."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example:"/>
+                        <Image Source="thread_ex"
+                               HeightRequest="{OnPlatform iOS=300, Android=250}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Important Notes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- To use threads, you must compile using the flag -pthread or -lpthread."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- The order in which you call the threads in code does not guarentee they will finish executing in the same order."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Remember to call the join() function, otherwise your program will end its execution before the threads are finished."/>
+
+                    </StackLayout>
+
+                    <Button Text="Fork"
+                            Margin="40, 0, 10, 0"
+                            x:Name="ForkButton"
+                            HeightRequest="40"
+                            Clicked="ForkButton_Clicked"
+                            BackgroundColor="#FFFFFF"/>
+
+                    <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="ForkBody">
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Fork:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="The fork() function call creates an identical copy of the parent process."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Fork Attributes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- The child has its own unique process ID, and this PID does not match the ID of any existing process group."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- The child does not inherit its parent's memory locks and semaphore adjustments."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- The child does not inherit outstanding asynchronous I/O operations from its parent nor does it inherit any asynchronous I/O contexts from its parent."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example:"/>
+                        <Image Source="fork_ex"
+                               HeightRequest="{OnPlatform iOS=300, Android=250}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Output:"/>
+                        <Image Source="fork_ex_2"
+                               HeightRequest="{OnPlatform iOS=300, Android=250}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Important Notes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Remember to include the line wait(NULL) to ensure the parent process will wait for all the child processes to finish executing before ending."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- fork() will return 1 in the parent process, and 0 in all subsequent children. However, if fork() fails for any reaason it will return -1."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Best used when the processes are not related, since each processes memory are is protected. For related tasks, it's better to use threads."/>
+                    </StackLayout>
+
+                    <Button Text="Mutex"
+                            Margin="40, 0, 10, 0"
+                            x:Name="MutexButton"
+                            HeightRequest="40"
+                            Clicked="MutexButton_Clicked"
+                            BackgroundColor="#FFFFFF"/>
+
+                    <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="MutexBody">
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Mutex:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A condition that specifies that only one process may update (modify) a shared resource at a time to ensure correct operation and results."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Mutexes are used to moderate access to a resource by different threads by locking out all other threads while one thread uses the data."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example:"/>
+                        <Image Source="mutex_ex_1"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Output With a Mutex:"/>
+                        <Image Source="mutex_ex_2"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Output with no Mutex:"/>
+                        <Image Source="mutex_ex_3"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="In this example, the shared resources between the threads is the output to the console and 'int i'. We can see that two threads reached the function at the same time, so they both changed the value of 'i' at the same time, and then tried to print to the console at the same time resulting in the broken output."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Important Notes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Remember to call join() after thread creation to make sure the threads finish executing."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Remember to include the flag -pthread or -lpthread in order to use threads."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Mutexes can be used to syncronize threads, but NOT forked processes."/>
+
+
+                    </StackLayout>
+
+                    <Button Text="Semaphores"
+                            Margin="40, 0, 10, 0"
+                            x:Name="SemaphoresButton"
+                            HeightRequest="40"
+                            Clicked="SemaphoresButton_Clicked"
+                            BackgroundColor="#FFFFFF"/>
+
+                    <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="SemaphoresBody">
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Semaphore:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="A semaphore is an integer variable that can be used to manage critical section problems and can be used to force a specific execution sequency of processes."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Binary Semaphores:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="The first of the two types of semaphores, binary semaphores can only be 1 or 0."/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Counting Semaphores:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="Counting semaphores can be any integer value, and are more useful when working with the sequence or synchronization of more than two processes."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

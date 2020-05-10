@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UNDCSCoreApp.TabsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menu"
+                     Clicked="ToolbarItemNew_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+
+    <ScrollView BackgroundColor="#00AF07">
+        <StackLayout Margin="10">
+            <Label Text="Navigation Page" TextColor="White" FontAttributes="Bold" FontSize="28" HorizontalTextAlignment="Center"/>
+            <Button Text="Main Page"
+                    x:Name="MainButton"
+                    BackgroundColor="#FFFFFF"
+                    Clicked="MainButton_Clicked"/>
+
+            <Button Text="Classes"
+                    Margin="0, 10"
+                    x:Name="ClassButton"
+                    BackgroundColor="#FFFFFF"
+                    Clicked="ClassButton_Clicked"/>
+            <StackLayout IsVisible="False" x:Name="ClassesStack" Margin="30, 0, 0, 0">
+                <Button Text="100 Level"
+                        Margin="0, 10"
+                        x:Name="OneButton"
+                        BackgroundColor="#FFFFFF"
+                        Clicked="OneButton_Clicked"/>
+                <StackLayout x:Name="OneStack" Margin="30, 0, 0, 0" IsVisible="False">
+                    <Button Text="160 - Computer Science I"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav160Button"/>
+                    <Button Text="161 - Computer Science II"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav161Button"/>
+                </StackLayout>
+
+                <Button Text="200 Level"
+                        Margin="0, 10"
+                        x:Name="TwoButton"
+                        BackgroundColor="#FFFFFF"
+                        Clicked="TwoButton_Clicked"/>
+                <StackLayout x:Name="TwoStack" Margin="30, 0, 0, 0" IsVisible="False">
+                    <Button Text="230 - Systems Programming"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav230Button"/>
+                    <Button Text="242 - Algorithms + Data Structures"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav242Button"/>
+                    <Button Text="280 - Object Oriented Programming"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav280Button"/>
+                </StackLayout>
+
+                <Button Text="300 Level"
+                        Margin="0, 10"
+                        x:Name="ThreeButton"
+                        BackgroundColor="#FFFFFF"
+                        Clicked="ThreeButton_Clicked"/>
+                <StackLayout x:Name="ThreeStack" Margin="30, 0, 0, 0" IsVisible="False">
+                    <Button Text="363 - User Interface Design"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav363Button"/>
+                    <Button Text="365 - Organization of Programming Languages"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav365Button"/>
+                    <Button Text="370 - Computer Architecture"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav370Button"/>
+                </StackLayout>
+
+                <Button Text="400 Level"
+                        Margin="0, 10"
+                        x:Name="FourButton"
+                        BackgroundColor="#FFFFFF"
+                        Clicked="FourButton_Clicked"/>
+                <StackLayout x:Name="FourStack" Margin="30, 0, 0, 50" IsVisible="False">
+                    <Button Text="435 - Formal Languages + Automata"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav435Button"/>
+                    <Button Text="451 - Operating Systems I"
+                            BackgroundColor="#FFFFFF"
+                            x:Name="Nav451Button"
+                            Clicked="Nav451Button_Clicked"/>
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
