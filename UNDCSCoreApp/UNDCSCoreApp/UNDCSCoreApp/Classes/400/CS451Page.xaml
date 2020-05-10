@@ -328,16 +328,58 @@
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
                            Text="Counting semaphores can be any integer value, and are more useful when working with the sequence or synchronization of more than two processes."/>
 
-                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example:"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 20, 0, 0" Text="Code Example (3 Program Files):"/>
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Program 0:"/>
+                        <Image Source="sem_ex_1"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Program 1:"/>
+                        <Image Source="sem_ex_2"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Program 2:"/>
+                        <Image Source="sem_ex_3"
+                               HeightRequest="{OnPlatform iOS=250, Android=200}"
+                               WidthRequest="{OnPlatform iOS=500, Android=450}"
+                               HorizontalOptions="Center"/>
+
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
+                           Text="In this example, the semaphore is initialized to the value of 10 in Program 0. Program 1 adds 10 to the semaphore, and checks if the new value is 20. If it is 20, then that means Program 0 successfully ran and set it's value to 10 prior to Program 1 adding another 10. Finally Program 2 runs and adds 10 to check if the new value is 30. If it's not 30, then Programs 0 or 1 clearly didn't run."/>
+
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
+                           Text="This is an example of how we can use semaphores to force processes to execute in a particular order. In this case, I decided I don't ever want to complete Program 1 if Program 0 hasn't completed, and Program 2 if either Program 0 or 1 haven't run yet."/>
+
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Important Notes:"/>
                         <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
-                           Text=""/>
+                           Text="- Semaphores will stay in memory if you do not delete them by calling semctl(semaphore, 0, IPC_RMID)."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- You can delete all active semaphores in memory in Linux with 'ipcrm -a' in the terminal."/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text="- Semaphore operations (get, ctl, etc.) return 0 upon successful execution, or -1 on a failure."/>
 
                     </StackLayout>
 
+                    <Button Text="Pipes"
+                            Margin="40, 0, 10, 0"
+                            x:Name="PipesButton"
+                            HeightRequest="40"
+                            Clicked="PipesButton_Clicked"
+                            BackgroundColor="#FFFFFF"/>
+
+                    <StackLayout IsVisible="False" Margin="30, 0, 0, 30" x:Name="PipesBody">
+                        <Label TextColor="#ffffff" FontSize="16" Margin="15, 40, 0, 0" Text="Pipes:"/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+                        <Label TextColor="#66ffcc" FontSize="16" Margin="15, 0, 0, 0"
+                           Text=""/>
+                    </StackLayout>
+                    
                 </StackLayout>
             </StackLayout>
         </ScrollView>

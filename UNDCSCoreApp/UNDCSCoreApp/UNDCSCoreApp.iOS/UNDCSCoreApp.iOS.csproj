@@ -82,6 +82,15 @@
     <ImageAsset Include="Assets.xcassets\fork_ex_2.imageset\fork_ex_2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\mutex_ex_1.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -98,6 +107,15 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\mutex_ex_3.imageset\mutex_ex_3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_1.imageset\sem_ex_1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_2.imageset\sem_ex_2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\sem_ex_3.imageset\sem_ex_3.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\thread_ex.imageset\Contents.json">

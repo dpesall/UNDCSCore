@@ -482,3 +482,6 @@ D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\mutex_ex_1.png
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\mutex_ex_3.png
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\mutex_ex_2.png
+D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\sem_ex_1.png
+D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\sem_ex_2.png
+D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp.Android\obj\Debug\90\res\drawable\sem_ex_3.png
