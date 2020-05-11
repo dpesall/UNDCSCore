@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UNDCSCoreApp.CreditsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menu"
+                     Clicked="ToolbarItemNew_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#00AF07">
+            <StackLayout Margin="10">
+                <StackLayout BackgroundColor="#00550A" >
+                    <StackLayout Margin="10">
+                        <Label Text="Credits" TextColor="White" FontAttributes="Bold" FontSize="32" HorizontalTextAlignment="Center"/>
+                        <Label TextColor="White"  FontSize="20" HorizontalTextAlignment="Center"
+                       Text="The UNDCS Core mobile application was created by Drew Pesall, a Computer Science and Mathematics student who graduated from UND in May 2020."/>
+                        <Label TextColor="White"  FontSize="20" HorizontalTextAlignment="Center" Margin="0, 10, 0, 5"
+                       Text="This project was started in association with Dr. Emanuel Grant. The goal of this project was to begin creating a mobile application that could be used as a resource for UND Computer Science students looking to study and learn."/>
+
+                    </StackLayout>
+                </StackLayout>
+                <Label />
+                <StackLayout BackgroundColor="#00550A">
+                    <StackLayout Margin="10, 10, 10, 90">
+                        <Label Text="Contributors" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Center"/>
+                        <Label TextColor="White"  FontSize="22" HorizontalTextAlignment="Center"
+                       Text="- Dr. Emanuel Grant, Professor"/>
+                        <Label TextColor="White"  FontSize="22" HorizontalTextAlignment="Center"
+                       Text="- Drew Pesall, Student"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

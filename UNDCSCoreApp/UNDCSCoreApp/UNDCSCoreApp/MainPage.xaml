@@ -22,11 +22,6 @@
                            WidthRequest="{OnPlatform iOS=300, Android=250}"
                            HorizontalOptions="Center"/>
 
-        <Button Text="Credits"
-                x:Name="CreditsButton"
-                BackgroundColor="#FFFFFF"
-                Clicked="CreditsButton_Clicked"/>
-        
     </StackLayout>
 
 </ContentPage>

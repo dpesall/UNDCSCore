@@ -5,7 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="UNDCSCoreApp.Classes._400.CS451Page" BackgroundColor="#2D2D2D">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menu"
+                     Clicked="ToolbarItemNew_Clicked"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
+
         <ScrollView>
             <StackLayout Margin="10, 30, 10, 10">
                 <Label Text="CS 451 - Operating Systems I" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Center"/>

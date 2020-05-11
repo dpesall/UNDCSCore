@@ -14,7 +14,7 @@
     <ScrollView BackgroundColor="#00AF07">
         <StackLayout Margin="10">
             <Label Text="Navigation Page" TextColor="White" FontAttributes="Bold" FontSize="28" HorizontalTextAlignment="Center"/>
-            <Button Text="Main Page"
+            <Button Text="Home Page"
                     x:Name="MainButton"
                     BackgroundColor="#FFFFFF"
                     Clicked="MainButton_Clicked"/>
@@ -89,6 +89,10 @@
                 </StackLayout>
 
             </StackLayout>
+            <Button Text="Credits"
+                    x:Name="CreditsButton"
+                    BackgroundColor="#FFFFFF"
+                    Clicked="CreditsButton_Clicked"/>
 
 
         </StackLayout>

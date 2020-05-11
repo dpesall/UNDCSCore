@@ -55,5 +55,10 @@ namespace UNDCSCoreApp
         {
             Navigation.PushAsync(new CS451Page());
         }
+
+        private void CreditsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CreditsPage());
+        }
     }
 }

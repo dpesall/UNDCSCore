@@ -56,5 +56,10 @@ namespace UNDCSCoreApp.Classes._400
         {
             PipesBody.IsVisible = !PipesBody.IsVisible;
         }
+
+        private void ToolbarItemNew_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TabsPage());
+        }
     }
 }

@@ -3,7 +3,6 @@ D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\bin\Debug\netstand
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\bin\Debug\netstandard2.0\ref\UNDCSCoreApp.dll
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\bin\Debug\netstandard2.0\UNDCSCoreApp.pdb
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\App.xaml.g.cs
-D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\Classes\400\CS451Page.xaml.g.cs
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\TabsPage.xaml.g.cs
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\UNDCSCoreApp.csproj.CoreCompileInputs.cache
@@ -14,3 +13,5 @@ D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstand
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\ref\UNDCSCoreApp.dll
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\UNDCSCoreApp.pdb
 D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\UNDCSCoreApp.csprojAssemblyReference.cache
+D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\Classes\400\CS451Page.xaml.g.cs
+D:\VS Repos\UNDCS-Core\UNDCSCoreApp\UNDCSCoreApp\UNDCSCoreApp\obj\Debug\netstandard2.0\CreditsPage.xaml.g.cs

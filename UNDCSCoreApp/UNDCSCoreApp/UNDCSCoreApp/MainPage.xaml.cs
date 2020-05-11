@@ -8,8 +8,6 @@ using Xamarin.Forms;
 
 namespace UNDCSCoreApp
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -17,11 +15,6 @@ namespace UNDCSCoreApp
         {
             InitializeComponent();
 
-        }
-
-        private void CreditsButton_Clicked(object sender, EventArgs e)
-        {
-            
         }
 
         private void ToolbarItemNew_Clicked(object sender, EventArgs e)
